@@ -1,6 +1,4 @@
-import {
-  convertToRoman
-} from "./index.js";
+import {convertToRoman} from "./index.js";
 
 let output;
 
@@ -12,7 +10,7 @@ describe("Palindrome Checker", () => {
   describe("Basic Numbers", () => {
     it("Should return a String", () => {
       output = convertToRoman(1);
-      expect(typeof output).toBe("String");
+      expect(typeof output).toBe("string");
     });
 
     it("Should return 'II' when given '2'", () => {
@@ -41,7 +39,7 @@ describe("Palindrome Checker", () => {
     });
   });
 
-  descibe("10 through 50", () => {
+  describe("10 through 50", () => {
     it("Should return 'XII' when given '12'", () => {
       output = convertToRoman(12);
       expect(output).toBe("XII");
@@ -52,9 +50,9 @@ describe("Palindrome Checker", () => {
       expect(output).toBe("XVI");
     });
 
-    it("Should return 'IXX' when given '29'", () => {
+    it("Should return 'XXIX' when given '29'", () => {
       output = convertToRoman(29);
-      expect(output).toBe("IXX");
+      expect(output).toBe("XXIX");
     });
 
     it("Should return 'XLIV' when given '44'", () => {
